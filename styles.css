@@ -1,0 +1,150 @@
+@import url("styles/header.css");
+
+:root {
+    --cor-de-fundo: #2d2b2c;
+    --branco: #FFFFFF;
+    --cor-cabecalho:#2d2b2c;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabeçalho {
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+}
+
+.container__imagem {
+    padding-left: 1em;
+}
+.barra-de-pesquisa{
+    border-radius: 40px;
+    border: none;
+    height: 30px;
+    width: 55vw;
+    margin-left: 1em;
+}
+.nome{
+    width: 60vw;
+    padding: 0.5em;
+}
+.nome-cabecalho{
+    text-align: center;
+}
+.main { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+ 
+}
+.galery {
+    height: 60vw;
+    width: 60vw;
+    overflow: hidden;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 20%;
+}
+.foto-roupa{
+    width: 30vw;
+
+}
+.imagens-academia{
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
+    color: white;
+    margin: 1em;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18PX;
+    font-weight: 600;
+}
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "League Spartan", sans-serif;
+
+}
+@media screen and (min-width: 900px) {
+    .barra-de-pesquisa{
+        width: 15vw;
+        margin-left: -60vw;
+    }
+    .nome-cabecalho img{
+        width: 30vw;
+    }
+    .nome-cabecalho{
+        background-color: #000000;
+    }
+    .cabeçalho{
+        height: 100px;
+    }
+    .galery{
+        width: 30vw;
+        height: 30vw;
+    }.galery .fotos img {
+        width: 20%;
+        height: 30vw;
+    }
+    .cabeçalho__menu-hamburguer {
+        margin-left: 2vw;
+    }.texto{
+        font-size: 50px;
+    }
+    .foto-roupa{
+        width: 15vw;
+    
+    }
+    footer{
+        background-color: #000000;
+        color: #ffffff;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    h2{
+        margin-left: -70vw;
+    }
+}                                                   
